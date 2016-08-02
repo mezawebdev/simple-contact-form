@@ -1,0 +1,65 @@
+// Frameworks
+
+// Definings
+@import "_reset.css";
+@import "_variables.scss";
+
+// Global Styles
+@import "_globals.scss";
+
+// Page Specifics
+@import "pages/_about_us.scss";
+
+// Mixins
+@import "_mixins.scss";
+
+body {
+	background: $body-background-color;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.contact-form {
+	width: 500px;
+	background: $contact-form-background;
+	border:2px solid $font-color;
+	position: relative;
+	top: 5vh;
+	margin: 0 auto;
+	color: $font-color;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	h1 {
+		text-align: center;
+	}
+	hr {
+		border-color: $font-color;
+		width: 455px;
+	}
+	input, label {
+		margin:0 0 10px 20px;
+	}
+	input {
+		background: $input-box-color;
+		border:1px solid $font-color;
+		width: 91.8%;
+	}
+	#message {
+		height: 100px;
+		overflow: scroll;
+	}
+	#buttondiv {
+		text-align: center;
+		margin:0;
+		input {
+			background-color: $font-color !important;
+			border: none;
+			color: white !important;
+			font-size: 1em;
+			font-weight: 200;
+			width: 100px !important;
+		}
+	}
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    	color: $font-color;
+    	padding-left: 5px;
+	}
+}
